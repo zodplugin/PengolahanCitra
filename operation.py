@@ -14,9 +14,9 @@ dest_xnor = cv2.bitwise_not(dest_xor,mask=None)
 dest_add = cv2.add(img1,img2,mask=None)
 dest_sub = cv2.subtract(img1,img2,mask=None)
 dest_mul = cv2.multiply(img1,img2)
+dest_div = cv2.divide(img1,img2)
 
-
-image = np.concatenate((cv2.putText(dest_or,"Operation OR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1),(cv2.putText(dest_xor,"Operation XOR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_and,"Operation AND",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_nand,"Operation NAND",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_nor,"Operation NOR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_xnor,"Operation XNOR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_add,"Operation +",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_sub,"Operation -",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_mul,"Operation *",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1))), axis=1)
+image = np.concatenate((cv2.putText(dest_or,"Operation OR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1),(cv2.putText(dest_xor,"Operation XOR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_and,"Operation AND",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_nand,"Operation NAND",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_nor,"Operation NOR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_xnor,"Operation XNOR",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_add,"Operation +",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_sub,"Operation -",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_mul,"Operation *",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1)),(cv2.putText(dest_div,"Operation /",(40,25),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,255),1))), axis=1)
 
 cv2.imshow('Image',image)
 
